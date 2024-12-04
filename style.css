@@ -4,7 +4,7 @@
   padding:5px ;
   margin: 5px;
 }
-html{border: #73573E 1px solid;}
+
 body    {
  color: #423932
  background color #eae9e6;
@@ -12,7 +12,7 @@ body    {
  font-family: "LXGW WenKai TC", cursive;
   font-weight: 300;
   font-style: normal;
-  border: #73573E 1px solid;
+
 }
 header, footer{
 background-color: #ebecb2;
