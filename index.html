@@ -1,73 +1,31 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>綠崗麵包工坊 - GgeenHill Bakery</title>
-    <!-- 引入 UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
-    <!-- 可選，為了RWD時顯示漂亮的選單 -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
+    <title>綠崗麵包工坊 - GreenHill Bakery</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.3/css/uikit.min.css">
 </head>
 <body>
-
-    <!DOCTYPE html>
-    <html lang="zh-Hant">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>綠崗麵包工坊 - GgeenHill Bakery</title>
-        <!-- 引入 UIkit CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
-        <!-- 可選，為了RWD時顯示漂亮的選單 -->
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
-    </head>
-    <body>
-    
-        <!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>綠崗麵包工坊 - GgeenHill Bakery</title>
-    <!-- 引入 UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
-    <!-- 可選，為了RWD時顯示漂亮的選單 -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
-</head>
-<body>
-
-    <!-- Header 開始 -->
     <header class="uk-background-muted uk-padding-small">
-        <div class="uk-container">
-            <div class="uk-flex uk-flex-middle uk-flex-between">
-                <!-- Logo 和 網站名稱 -->
-                <div class="uk-flex uk-flex-middle">
-                    <img src="images/logo.png" alt="Logo" class="uk-margin-right" width="80">
-                    <div>
-                        <h1 class="uk-text-large uk-margin-remove">綠崗麵包工坊</h1>
-                        <p class="uk-text-small uk-margin-remove">GgeenHill Bakery</p>
-                    </div>
+        <div class="uk-container uk-flex uk-flex-middle uk-flex-between">
+            <!-- Logo and Titles -->
+            <div class="uk-flex uk-flex-middle">
+                <img src="photo/jPZUMq513GO2775NNk1X9.jpg" alt="Logo" class="uk-margin-small-right uk-border-circle" style="height: 100px;" >
+                <div>
+                    <h1 class="uk-margin-remove uk-text-bold">綠崗麵包工坊</h1>
+                    <p class="uk-margin-remove uk-text-meta">GreenHill Bakery</p>
                 </div>
+            </div>
 
-                <!-- 電腦版選單 (隱藏於行動裝置) -->
-                <div class="uk-visible@m">
-                    <ul class="uk-navbar-nav">
-                        <li><a href="#">首頁</a></li>
-                        <li><a href="#">產品</a></li>
-                        <li><a href="#">關於我們</a></li>
-                        <li><a href="#">聯絡我們</a></li>
-                    </ul>
-                </div>
-
-                <!-- 行動裝置版選單 (隱藏於電腦版) -->
-                <div class="uk-hidden@m">
-                    <a href="#" class="uk-navbar-toggle" uk-navbar-toggle-icon></a>
-                    <div class="uk-navbar-dropdown uk-navbar-dropdown-left" uk-dropdown="mode: click">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
+            <!-- Responsive Navigation -->
+            <nav>
+                <!-- Hamburger Menu (Hidden on Desktop) -->
+                <button class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle="target: #menu"></button>
+                <div id="menu" class="uk-hidden@m" uk-offcanvas>
+                    <div class="uk-offcanvas-bar">
+                        <ul class="uk-nav uk-nav-default">
                             <li><a href="#">首頁</a></li>
                             <li><a href="#">產品</a></li>
                             <li><a href="#">關於我們</a></li>
@@ -75,88 +33,148 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+
+                <!-- Desktop Menu (Hidden on Mobile) -->
+                <ul class="uk-visible@m uk-subnav uk-subnav-divider">
+                    <li><a href="#">首頁</a></li>
+                    <li><a href="#">產品</a></li>
+                    <li><a href="#">關於我們</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <!-- Header 結束 -->
 
-    <!-- 2欄式店面介紹區段 -->
-    <section class="uk-section uk-background-muted">
+    <section class="uk-section uk-section-default">
         <div class="uk-container">
-            <h2 class="uk-text-center uk-margin-medium-bottom">綠崗上的美味</h2>
-            <div class="uk-grid uk-child-width-1-2@m uk-child-width-1-1@s" uk-grid>
-                <!-- 第一欄：店面照片 -->
+            <h2 class="uk-text-center">在地就是新鮮</h2>
+            <div class="uk-child-width-1-3@m uk-grid-match uk-grid-small" uk-grid>
                 <div>
-                    <img src="images/bakeryshop1.png" alt="店面照片" class="uk-width-1-1 uk-border-rounded">
-                </div>
-                <!-- 第二欄：店面說明 -->
-                <div>
-                    <p>綠崗麵包工坊位於寧靜的鄉間，我們堅持使用新鮮在地的食材，為您帶來最健康、最美味的麵包。這裡不僅是一家麵包店，更是一個溫馨的社區中心，歡迎您來到這裡，感受綠崗的自然與美好。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3欄式推薦商品區段 -->
-    <section class="uk-section uk-background-muted">
-        <div class="uk-container">
-            <h2 class="uk-text-center uk-margin-medium-bottom">店長溫馨推薦</h2>
-            <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-1@s" uk-grid>
-                <!-- 商品1 -->
-                <div class="uk-text-center">
                     <div class="uk-card uk-card-default uk-card-body">
-                        <img src="images/tuna.webp" alt="商品1" class="uk-border-circle uk-width-1-2 uk-margin-bottom">
-                        <h3 class="uk-card-title">巧克力麵包</h3>
-                        <p>香濃的巧克力融入鬆軟的麵包中，每一口都滿是幸福感。</p>
+                        <h3 class="uk-card-title">1.歐式精品麵包店的「視覺颯宴」－環境設計的極緻美學</h3>
+                        <p>一進門，最先吸引人目光的就是那宛如歐洲小鎮麵包店的公園設計。黑色展示櫃與溫潤的木頭藤編裝飾籃和銅
+                        </p>
                     </div>
                 </div>
-                <!-- 商品2 -->
-                <div class="uk-text-center">
+                <div>
                     <div class="uk-card uk-card-default uk-card-body">
-                        <img src="images/toast.webp" alt="商品2" class="uk-border-circle uk-width-1-2 uk-margin-bottom">
-                        <h3 class="uk-card-title">原味麵包</h3>
-                        <p>每一片都充滿天然發酵的香氣，回味無窮。</p>
+                        <h3 class="uk-card-title">2.胡蘿蔔的「烘焙品項」－讓人陷入選擇障礙的美味天堂</h3>
+                        <p>這間店最大的特色之一，就是烘焙品的豐富性，來自經典的法國長棍、吐司，手工甜點，應有盡有。這樣的維生素選擇，無論你是偏愛鹹食、甜食，還是重愛咀嚼麵包的口感，都能找到一款符合你胃口的美味！
+                        </p>
                     </div>
                 </div>
-                <!-- 商品3 -->
-                <div class="uk-text-center">
+                <div>
                     <div class="uk-card uk-card-default uk-card-body">
-                        <img src="images/wheat.webp" alt="商品3" class="uk-border-circle uk-width-1-2 uk-margin-bottom">
-                        <h3 class="uk-card-title">草莓奶油包</h3>
-                        <p>新鮮草莓與奶油的完美結合，讓你一口接一口。</p>
+                        <h3 class="uk-card-title">3.細膩的歐風節奏－讓人想停下腳步的「慢活空間」</h3>
+                        <p>這不僅僅是一間麵包店，還有一個可以讓人放慢步調、靜靜享受生活的小玫瑰。藤編籃子和麵
+                    這樣的環境裡，搭配一杯熱咖啡或茶，輕輕咬下一口新鮮出爐的麵包，讓人瞬間忘卻生活的壓力，沉浸在香氣與美味組成的幸福感中
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 頁尾區段 -->
-    <footer class="uk-section uk-background-muted">
+    <section class="uk-section uk-section-muted">
         <div class="uk-container">
-            <div class="uk-grid uk-child-width-1-4@m" uk-grid>
+            <h2 class="uk-text-center">綠崗上的美味</h2>
+            <div class="uk-grid-divider uk-child-width-1-2@m" uk-grid>
+                <div>
+                    <img src="photo/ZX9012yMhnE24bRH3wNIF.jpg" alt="店面照片" class="uk-width-1-1">
+                </div>
+                <div class="uk-flex uk-flex-middle">
+                    <p>綠崗早午餐（GreenHill Brunch）
+
+                        綠崗早午餐是一間專注於美味早午餐的輕食餐廳，秉持「新鮮、用心」的理念，為顧客帶來高品質的餐點。我們嚴選國產豬肉、美國牛肉及新鮮蔬果，堅持讓每一口都吃得到真實的美味。  
+                        
+                        店內主打多款經典三明治與碳烤吐司，像是招牌「雞腿排蛋三明治」，以外酥內嫩的雞腿排搭配蔬菜、起司和濃郁福源花生醬，風味層次豐富；而「海鹽牛五花三明治」選用美國牛五花肉，鹹香多汁，滿足肉食愛好者的味蕾。簡單的「大火腿蛋吐司」與「培根蛋吐司」，碳烤後的香氣與用料飽滿，讓您享受最純粹的幸福滋味。  
+                        
+                        店內空間明亮舒適，搭配溫暖的木質設計與藤編擺設，營造出輕鬆愜意的氛圍。無論是單人輕食、朋友小聚，還是家庭時光，綠崗早午餐都是您開啟美好一天的最佳選擇！
+                        
+                        綠崗早午餐，讓每一份餐點都成為生活中的亮點。誠摯邀請您前來品嚐，與我們一起開啟美好、愉悅的一天！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section uk-section-default">
+        <div class="uk-container">
+            <h2 class="uk-text-center">店長溫馨推薦</h2>
+            <div class="uk-child-width-1-3@m uk-grid-match uk-grid-small" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                        <img src="photo/Pork Chop and Egg Sandwich.jpg" alt="商品 1" class="uk-border-circle" style="width: 150px; height: 150px;">
+                        <h3 class="uk-card-title">豬排蛋三明治</h3>
+                        <p>**豬排蛋三明治**  
+
+                            綠崗早午餐精心打造的經典款之一，選用新鮮國產豬排，經過特製醃料細心醃製，烹煮過後保留肉質的鮮嫩多汁，每一口都能嚐到豬排的香氣與彈牙口感。搭配柔嫩的煎蛋，口感滑順，加上爽脆的美生菜、牛番茄與新鮮小黃瓜，讓口感更清爽平衡。再夾入香濃起司，與濃郁微甜的福源花生醬，巧妙融合出鹹香甜的多層次滋味，滿足味蕾的每一個細節。  
+                            
+                            使用外酥內軟的吐司，經過碳烤後帶有迷人的香氣，將所有豐富食材層層堆疊並包裹其中，讓每一口都飽滿紮實又富有層次感。這份三明治不僅口味豐富，份量也恰到好處，無論是早餐、午餐或是下午輕食，都能讓您補充滿滿的元氣與活力，是美味與飽足的完美選擇！</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                        <img src="photo/Sausage and Egg Sandwich.jpg" alt="商品 2" class="uk-border-circle" style="width: 150px; height: 150px;">
+                        <h3 class="uk-card-title">香腸蛋三明治</h3>
+                        <p>香腸蛋三明治 
+
+                            綠崗早午餐的經典三明治，選用國產香腸，肉質鮮嫩紮實，經過細緻烹調，帶出香腸特有的鹹香風味。搭配滑嫩的雞蛋、新鮮的美生菜、牛番茄和爽脆的小黃瓜，再加入香濃起司和福源花生醬，讓鹹香與微甜在口中交織出豐富的層次感。  
+                            
+                            酥香的吐司包裹所有食材，每一口都能感受到滿滿的飽足感與幸福滋味。無論是享受一頓豐盛的早餐，還是作為補充能量的午餐選擇，這款三明治都能帶給您一天滿滿的活力！</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                        <img src="photo/Club Sandwich.jpg" alt="商品 3" class="uk-border-circle" style="width: 150px; height: 150px;">
+                        <h3 class="uk-card-title">總匯三明治</h3>
+                        <p>總匯三明治 
+
+                            綠崗早午餐的招牌經典，由四片酥香吐司層層堆疊，打造出豐富且飽滿的口感。內餡使用自家醃製的國產豬排，搭配鹹香的大火腿與酥脆的培根，讓肉類的鮮美香氣在口中層次分明。此外，還加入滑嫩的煎蛋、新鮮的美生菜、牛番茄、小黃瓜，以及濃郁的福源花生醬和香濃起司，讓鹹香中帶有微甜，風味多元而和諧。  
+                            
+                            每一口都是滿滿的料與心意，飽足感十足，無論是當作早餐、午餐或下午茶，都是完美的選擇。這份總匯三明治是肉食控與美食愛好者不可錯過的一道經典之選！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="uk-section uk-section-small uk-section-muted">
+        <div class="uk-container">
+            <div class="uk-child-width-1-4@m uk-grid-small" uk-grid>
                 <div>
                     <h4>關於我們</h4>
-                    <p>綠崗麵包工坊致力於製作美味且健康的手作麵包，使用當地新鮮食材。</p>
+                    <p>介紹企業的歷史與理念。</p>
                 </div>
                 <div>
-                    <h4>聯絡我們</h4>
-                    <p>電話：123-456-789</p>
-                    <p>電子郵件：contact@greenhillbakery.com</p>
+                    <h4>產品</h4>
+                    <ul class="uk-list">
+                        <li><a href="#">麵包</a></li>
+                        <li><a href="#">蛋糕</a></li>
+                        <li><a href="#">飲品</a></li>
+                    </ul>
                 </div>
                 <div>
-                    <h4>產品介紹</h4>
-                    <p>我們提供多種手作麵包、蛋糕與小點心，歡迎來店品嚐。</p>
+                    <h4>客戶服務</h4>
+                    <ul class="uk-list">
+                        <li><a href="#">聯絡我們</a></li>
+                        <li><a href="#">常見問題</a></li>
+                        <li><a href="#">隱私政策</a></li>
+                    </ul>
                 </div>
                 <div>
                     <h4>社交媒體</h4>
-                    <p>追蹤我們，了解更多最新動態！</p>
-                    <p>Facebook | Instagram | Twitter</p>
+                    <ul class="uk-iconnav">
+                        <li><a href="#" uk-icon="icon: facebook"></a></li>
+                        <li><a href="#" uk-icon="icon: twitter"></a></li>
+                        <li><a href="#" uk-icon="icon: instagram"></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.3/js/uikit-icons.min.js"></script>
 </body>
 </html>
-
-    
