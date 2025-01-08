@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&family=Noto+Sans+TC:wght@100..900&display=swap');
 body {
-    color:#6B3A46;
+    color:#eb043e;
     font-size: 18px;
     font-family: "LXGW WenKai TC", cursive;
     font-weight: 300;
@@ -26,7 +26,7 @@ h5, h6 {
 }
 
 .product h3 {
-    border-bottom: #ccc 1px solid;
+    border-bottom: #e00f0f 1px solid;
 }
 
 .menu li a {
@@ -34,5 +34,5 @@ h5, h6 {
 }
 
 .feature h3 {
-    border-bottom: #050505 1px solid;
+    border-bottom: #ec1b1b 1px solid;
 }
